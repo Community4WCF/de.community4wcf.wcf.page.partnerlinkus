@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: pagemenu.xml 1203 2010-04-08 18:31:33Z TobiasH87 $ -->
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/page-menu.xsd">	
+	<import>
+		<!-- Partner -->
+		<pagemenuitem name="wcf.header.menu.partner">
+			<iconmedium>partnerM.png</iconmedium>
+			<iconsmall>partnerS.png</iconsmall>
+			<position>header</position>
+			<link>index.php?page=Partner</link>
+			<permissions>user.managepages.canViewPartner</permissions>
+			<options>module_partner</options>
+		</pagemenuitem>
+		<!--
+		<pagemenuitem name="wcf.header.menu.partner.feed">
+			<iconmedium>partnerM.png</iconmedium>
+			<iconsmall>partnerS.png</iconsmall>
+			<position>footer</position>
+			<link>index.php?page=PartnerFeed</link>
+			<permissions>user.managepages.canViewPartner</permissions>
+			<options>module_partner</options>
+		</pagemenuitem>
+		-->
+		<!-- /Partner -->
+		<!-- LinkUs -->
+		<pagemenuitem name="wcf.header.menu.linkus">
+			<iconmedium>linkusM.png</iconmedium>
+			<iconsmall>linkusS.png</iconsmall>
+			<position>footer</position>
+			<link>index.php?page=LinkUs</link>
+			<permissions>user.managepages.canViewLinkUs</permissions>
+			<options>module_linkus</options>
+		</pagemenuitem>
+		<!-- /LinkUs -->
+	</import>
+</data>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: de-informal.xml 1273 2010-04-13 17:21:48Z TobiasH87 $ -->
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de-informal">
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.user.managepages.canViewPartnerApply"><![CDATA[Kann die Partner werden sehen]]></item>
+		<item name="wcf.acp.group.option.user.managepages.canViewPartnerApply.description"><![CDATA[Mitglieder dieser Benutzergruppe können die Partner werden sehen.]]></item>
+		<item name="wcf.acp.group.option.admin.content.partner.partnerapply"><![CDATA[Partner "werden" bearbeiten]]></item>
+		<item name="wcf.acp.group.option.admin.content.partner.partnerapply.description"><![CDATA[Mitglieder dieser Benutzergruppe können Partner werden bearbeiten.]]></item>
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.partner.partnerapply"><![CDATA[Partner werden]]></item>
+		<item name="wcf.acp.option.category.partner.partnerapply.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.category.partner.partnerapply.support"><![CDATA[Support]]></item>
+		<item name="wcf.acp.option.category.partner.partnerapply.support.description"><![CDATA[Hier kannst du zusätzlich einstellen, wo man sich bewerben soll.]]></item>
+		<item name="wcf.acp.option.partnerapply_title"><![CDATA[Titel]]></item>
+		<item name="wcf.acp.option.partnerapply_title.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.partnerapply_text"><![CDATA[Text]]></item>
+		<item name="wcf.acp.option.partnerapply_text.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.partnerapply_enable_smilies"><![CDATA[Smilies verwenden]]></item>
+		<item name="wcf.acp.option.partnerapply_enable_smilies.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.partnerapply_enable_html"><![CDATA[HTML verwenden]]></item>
+		<item name="wcf.acp.option.partnerapply_enable_html.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.partnerapply_enable_bbcodes"><![CDATA[BBCodes verwenden]]></item>
+		<item name="wcf.acp.option.partnerapply_enable_bbcodes.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.partnerapply_enable_support"><![CDATA[Support aktivieren?]]></item>
+		<item name="wcf.acp.option.partnerapply_enable_support.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.partnerapply_support_type"><![CDATA[Art]]></item>
+		<item name="wcf.acp.option.partnerapply_support_type.description"><![CDATA[Hier <strong>kannst</strong> du die Art des Support für Bewerbungen eingeben, z.B. <i>im Forum</i> , <i>über Email</i> oder <i>über PN</i> .]]></item>
+		<item name="wcf.acp.option.partnerapply_support_link"><![CDATA[Link]]></item>
+		<item name="wcf.acp.option.partnerapply_support_link.description"><![CDATA[Gebe hier einen Link zu der entsprechenden Art ein, z.B. für Email: <i>index.php?form=Mail&amp;userID={#$this->user->userID}</i> oder <i>mailto:{MAIL_FROM_ADDRESS}</i> .]]></item>
+	</category>
+	<category name="wcf.partnerlinkus">
+		<item name="wcf.partnerlinkus.partnerapply.title"><![CDATA[Partner werden]]></item>
+		<item name="wcf.partnerlinkus.partnerapply.description"><![CDATA[Werden Sie unser Partner.]]></item>
+		<item name="wcf.partnerlinkus.partnerapply.apply"><![CDATA[Jetzt {lang}{PARTNERAPPLY_SUPPORT_TYPE}{/lang} bewerben!]]></item>
+	</category>
+	<category name="wcf.usersOnline">
+		<item name="wcf.usersOnline.location.partnerapply"><![CDATA[<a href="index.php?page=PartnerApply">Partner werden</a>]]></item>
+	</category>
+</language>
