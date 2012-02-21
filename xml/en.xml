@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: en.xml 1277 2010-04-13 19:59:12Z TobiasH87 $ -->
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="en">
+	<category name="wcf.acp.menu">
+		<!-- Partner -->
+		<item name="wcf.acp.menu.link.content.partner"><![CDATA[Partner]]></item>
+		<item name="wcf.acp.menu.link.content.partner.show"><![CDATA[Partner show]]></item>
+		<item name="wcf.acp.menu.link.content.partner.show.description"><![CDATA[]]></item>
+		<item name="wcf.acp.menu.link.content.partner.add"><![CDATA[Partner add]]></item>
+		<item name="wcf.acp.menu.link.content.partner.add.description"><![CDATA[]]></item>
+		<item name="wcf.acp.menu.link.content.partner.edit"><![CDATA[Partner edit]]></item>
+		<item name="wcf.acp.menu.link.content.partner.edit.description"><![CDATA[]]></item>
+		<!-- /Partner -->
+		<!-- LinkUs -->
+		<item name="wcf.acp.menu.link.content.linkus"><![CDATA[LinkUs]]></item>
+		<item name="wcf.acp.menu.link.content.linkus.show"><![CDATA[LinkUs show]]></item>
+		<item name="wcf.acp.menu.link.content.linkus.show.description"><![CDATA[]]></item>
+		<item name="wcf.acp.menu.link.content.linkus.add"><![CDATA[LinkUs add]]></item>
+		<item name="wcf.acp.menu.link.content.linkus.add.description"><![CDATA[]]></item>
+		<item name="wcf.acp.menu.link.content.linkus.edit"><![CDATA[LinkUs edit]]></item>
+		<item name="wcf.acp.menu.link.content.linkus.edit.description"><![CDATA[]]></item>
+		<!-- /LinkUs -->
+	</category>
+	<category name="wcf.acp.partnerlinkus">
+		<!-- Partner -->
+		<item name="wcf.acp.partnerlinkus.partner.nodata"><![CDATA[No Partner available!  :-( ]]></item>
+		<item name="wcf.acp.partnerlinkus.partner.count"><![CDATA[There are total {if $items == 1}one Partner{else}{#$items} Partner{/if}.]]></item>
+		<item name="wcf.acp.partnerlinkus.partner.partnerID"><![CDATA[ID]]></item>
+		<item name="wcf.acp.partnerlinkus.partner.name"><![CDATA[Name of Partner]]></item>
+		<item name="wcf.acp.partnerlinkus.partner.pubDate"><![CDATA[Add: Date, Time]]></item>
+		<item name="wcf.acp.partnerlinkus.partner.disable"><![CDATA[Partner disable]]></item>
+		<item name="wcf.acp.partnerlinkus.partner.enable"><![CDATA[Partner enable]]></item>
+		<item name="wcf.acp.partnerlinkus.partner.delete"><![CDATA[Partner delete]]></item>
+		<item name="wcf.acp.partnerlinkus.partner.delete.sure"><![CDATA[Do you want really DELETE this Partner?]]></item>
+		<item name="wcf.acp.partnerlinkus.partner.delete.success"><![CDATA[Partner successfully deleted.]]></item>
+		<item name="wcf.acp.partnerlinkus.partner.edit"><![CDATA[Partner edit]]></item>
+		<item name="wcf.acp.partnerlinkus.partner.edit.success"><![CDATA[Partner successfully edited.]]></item>
+		<item name="wcf.acp.partnerlinkus.partner.add.success"><![CDATA[Partner successfully added.]]></item>
+		<item name="wcf.acp.partnerlinkus.partner.item"><![CDATA[Partner Data]]></item>
+		<item name="wcf.acp.partnerlinkus.partner.item.description"><![CDATA[]]></item>
+		<item name="wcf.acp.partnerlinkus.partner.name"><![CDATA[Name]]></item>
+		<item name="wcf.acp.partnerlinkus.partner.name.description"><![CDATA[Enter the name of the Partner.]]></item>
+		<item name="wcf.acp.partnerlinkus.partner.description"><![CDATA[Description]]></item>
+		<item name="wcf.acp.partnerlinkus.partner.description.description"><![CDATA[Enter a description. The use of BBCodes and Smileys is possible.]]></item>
+		<item name="wcf.acp.partnerlinkus.partner.link"><![CDATA[Link]]></item>
+		<item name="wcf.acp.partnerlinkus.partner.link.description"><![CDATA[Enter a link (URL), to the page from Partner.]]></item>
+		<item name="wcf.acp.partnerlinkus.partner.image"><![CDATA[Banner]]></item>
+		<item name="wcf.acp.partnerlinkus.partner.image.description"><![CDATA[Enter a link to banner from Partner.]]></item>
+		<item name="wcf.acp.partnerlinkus.partner.showOrder"><![CDATA[Order]]></item>
+		<item name="wcf.acp.partnerlinkus.partner.showOrder.description"><![CDATA[Enter the position of partner, on which it appears on the partner site.]]></item>
+		<!-- /Partner -->
+		<!-- LinkUs -->
+		<item name="wcf.acp.partnerlinkus.linkus.nodata"><![CDATA[No LinkUs available!  :-( ]]></item>
+		<item name="wcf.acp.partnerlinkus.linkus.count"><![CDATA[There are total {if $items == 1}one LinkUs{else}{#$items} LinkUs{/if}.]]></item>
+		<item name="wcf.acp.partnerlinkus.linkus.linkusID"><![CDATA[ID]]></item>
+		<item name="wcf.acp.partnerlinkus.linkus.name"><![CDATA[Name of LinkUs]]></item>
+		<item name="wcf.acp.partnerlinkus.linkus.pubDate"><![CDATA[Add: Date, Time]]></item>
+		<item name="wcf.acp.partnerlinkus.linkus.disable"><![CDATA[LinkUs disable]]></item>
+		<item name="wcf.acp.partnerlinkus.linkus.enable"><![CDATA[LinkUs enable]]></item>
+		<item name="wcf.acp.partnerlinkus.linkus.delete"><![CDATA[LinkUs delete]]></item>
+		<item name="wcf.acp.partnerlinkus.linkus.delete.sure"><![CDATA[Do you want really DELETE this LinkUs?]]></item>
+		<item name="wcf.acp.partnerlinkus.linkus.delete.success"><![CDATA[LinkUs successfully deleted.]]></item>
+		<item name="wcf.acp.partnerlinkus.linkus.edit"><![CDATA[LinkUs edit]]></item>
+		<item name="wcf.acp.partnerlinkus.linkus.edit.success"><![CDATA[LinkUs successfully edited.]]></item>
+		<item name="wcf.acp.partnerlinkus.linkus.add.success"><![CDATA[LinkUs successfully added.]]></item>
+		<item name="wcf.acp.partnerlinkus.linkus.item"><![CDATA[LinkUs Data]]></item>
+		<item name="wcf.acp.partnerlinkus.linkus.item.description"><![CDATA[]]></item>
+		<item name="wcf.acp.partnerlinkus.linkus.name"><![CDATA[Name]]></item>
+		<item name="wcf.acp.partnerlinkus.linkus.name.description"><![CDATA[Enter the name of the LinkUs.]]></item>
+		<item name="wcf.acp.partnerlinkus.linkus.description"><![CDATA[Description]]></item>
+		<item name="wcf.acp.partnerlinkus.linkus.description.description"><![CDATA[Enter a description. The use of BBCodes and Smileys is possible.]]></item>
+		<item name="wcf.acp.partnerlinkus.linkus.link"><![CDATA[Link]]></item>
+		<item name="wcf.acp.partnerlinkus.linkus.link.description"><![CDATA[Enter a link (URL), to the page from LinkUs, z.B. {@PAGE_URL} .]]></item>
+		<item name="wcf.acp.partnerlinkus.linkus.image"><![CDATA[Banner]]></item>
+		<item name="wcf.acp.partnerlinkus.linkus.image.description"><![CDATA[Enter a link to banner for LinkUs, z.B. {@PAGE_URL}/banner/{PAGE_TITLE}.png .]]></item>
+		<item name="wcf.acp.partnerlinkus.linkus.showOrder"><![CDATA[Reihenfolge]]></item>
+		<item name="wcf.acp.partnerlinkus.linkus.showOrder.description"><![CDATA[Enter the position of linkus, on which it appears on the linkus site.]]></item>
+		<!-- /LinkUs -->
+	</category>
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.category.user.managepages"><![CDATA[Manage Pages]]></item>
+		<item name="wcf.acp.group.option.category.user.managepages.description"><![CDATA[To manage your pages.]]></item>
+		<!-- Partner -->
+		<item name="wcf.acp.group.option.user.managepages.canViewPartner"><![CDATA[Can see Partner]]></item>
+		<item name="wcf.acp.group.option.user.managepages.canViewPartner.description"><![CDATA[Members of this group can see Partner.]]></item>
+		<item name="wcf.acp.group.option.category.admin.content.partner"><![CDATA[Partner]]></item>
+		<item name="wcf.acp.group.option.category.admin.content.partner.description"><![CDATA[]]></item>
+		<item name="wcf.acp.group.option.admin.content.partner.partnershow"><![CDATA[Partner show]]></item>
+		<item name="wcf.acp.group.option.admin.content.partner.partnershow.description"><![CDATA[Members of this group can show Partner.]]></item>
+		<item name="wcf.acp.group.option.admin.content.partner.partneradd"><![CDATA[Partner add]]></item>
+		<item name="wcf.acp.group.option.admin.content.partner.partneradd.description"><![CDATA[Members of this group can add Partner.]]></item>
+		<item name="wcf.acp.group.option.admin.content.partner.partneredit"><![CDATA[Partner edit]]></item>
+		<item name="wcf.acp.group.option.admin.content.partner.partneredit.description"><![CDATA[Members of this group can edit Partner.]]></item>
+		<item name="wcf.acp.group.option.admin.content.partner.partnerdelete"><![CDATA[Partner delete]]></item>
+		<item name="wcf.acp.group.option.admin.content.partner.partnerdelete.description"><![CDATA[Members of this group can delete Partner.]]></item>
+		<item name="wcf.acp.group.option.admin.content.partner.partneroptions"><![CDATA[Partner Optionen]]></item>
+		<item name="wcf.acp.group.option.admin.content.partner.partneroptions.description"><![CDATA[Mitglieder dieser Benutzergruppe können die Partner Optionen bearbeiten.]]></item>
+		<!-- /Partner -->
+		<!-- LinkUs -->
+		<item name="wcf.acp.group.option.user.managepages.canViewLinkUs"><![CDATA[Can see LinkUs]]></item>
+		<item name="wcf.acp.group.option.user.managepages.canViewLinkUs.description"><![CDATA[Members of this group can see LinkUs.]]></item>
+		<item name="wcf.acp.group.option.category.admin.content.linkus"><![CDATA[LinkUs]]></item>
+		<item name="wcf.acp.group.option.category.admin.content.linkus.description"><![CDATA[]]></item>
+		<item name="wcf.acp.group.option.admin.content.linkus.linkusshow"><![CDATA[LinkUs show]]></item>
+		<item name="wcf.acp.group.option.admin.content.linkus.linkusshow.description"><![CDATA[Members of this group can show LinkUs.]]></item>
+		<item name="wcf.acp.group.option.admin.content.linkus.linkusadd"><![CDATA[LinkUs add]]></item>
+		<item name="wcf.acp.group.option.admin.content.linkus.linkusadd.description"><![CDATA[Members of this group can add LinkUs.]]></item>
+		<item name="wcf.acp.group.option.admin.content.linkus.linkusedit"><![CDATA[LinkUs edit]]></item>
+		<item name="wcf.acp.group.option.admin.content.linkus.linkusedit.description"><![CDATA[Members of this group can edit LinkUs.]]></item>
+		<item name="wcf.acp.group.option.admin.content.linkus.linkusdelete"><![CDATA[LinkUs delete]]></item>
+		<item name="wcf.acp.group.option.admin.content.linkus.linkusdelete.description"><![CDATA[Members of this group can delete LinkUs.]]></item>
+		<item name="wcf.acp.group.option.admin.content.linkus.linkusoptions"><![CDATA[LinkUs Optionen]]></item>
+		<item name="wcf.acp.group.option.admin.content.linkus.linkusoptions.description"><![CDATA[Mitglieder dieser Benutzergruppe können die LinkUs Optionen bearbeiten.]]></item>
+		<!-- /LinkUs -->
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.module.content.partnerlinkus"><![CDATA[Partner &amp; LinkUs]]></item>
+		<item name="wcf.acp.option.category.module.content.partnerlinkus.description"><![CDATA[]]></item>
+		<!-- Partner -->
+		<item name="wcf.acp.option.module_partner"><![CDATA[Partner]]></item>
+		<item name="wcf.acp.option.module_partner.description"><![CDATA[Partner enable.]]></item>
+		<item name="wcf.acp.option.category.partner"><![CDATA[Partner]]></item>
+		<item name="wcf.acp.option.category.partner.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.category.partner.partner"><![CDATA[Partner]]></item>
+		<item name="wcf.acp.option.category.partner.partner.description"><![CDATA[Settings for the partner site!]]></item>
+		<item name="wcf.acp.option.category.partner.partner.view"><![CDATA[View]]></item>
+		<item name="wcf.acp.option.category.partner.partner.view.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.partner_button_top"><![CDATA[Top-Button]]></item>
+		<item name="wcf.acp.option.partner_button_top.description"><![CDATA[Top-Button show?]]></item>
+		<item name="wcf.acp.option.partner_button_visit"><![CDATA[Visit-Button]]></item>
+		<item name="wcf.acp.option.partner_button_visit.description"><![CDATA[Visit-Button show?]]></item>
+		<!-- /Partner -->
+		<!-- LinkUs -->
+		<item name="wcf.acp.option.module_linkus"><![CDATA[LinkUs]]></item>
+		<item name="wcf.acp.option.module_linkus.description"><![CDATA[LinkUs enable.]]></item>
+		<item name="wcf.acp.option.category.linkus"><![CDATA[LinkUs]]></item>
+		<item name="wcf.acp.option.category.linkus.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.category.linkus.linkus"><![CDATA[LinkUs]]></item>
+		<item name="wcf.acp.option.category.linkus.linkus.description"><![CDATA[Settings for the linkus site!]]></item>
+		<item name="wcf.acp.option.category.linkus.linkus.view"><![CDATA[View]]></item>
+		<item name="wcf.acp.option.category.linkus.linkus.view.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.linkus_button_top"><![CDATA[Top-Button]]></item>
+		<item name="wcf.acp.option.linkus_button_top.description"><![CDATA[Top-Button show?]]></item>
+		<!-- /LinkUs -->
+	</category>
+	<category name="wcf.header.menu">
+		<!-- Partner -->
+		<item name="wcf.header.menu.partner"><![CDATA[Partner]]></item>
+		<item name="wcf.header.menu.partner.feed"><![CDATA[Partner-Feed]]></item>
+		<!-- /Partner -->
+		<!-- LinkUs -->
+		<item name="wcf.header.menu.linkus"><![CDATA[LinkUs]]></item>
+		<!-- /LinkUs -->
+	</category>
+	<category name="wcf.partnerlinkus">
+		<!-- Partner -->
+		<item name="wcf.partnerlinkus.partner.title"><![CDATA[Partner]]></item>
+		<item name="wcf.partnerlinkus.partner.description"><![CDATA[Here you can find a collection us Partners and friendly Websites.]]></item>
+		<item name="wcf.partnerlinkus.partner.count"><![CDATA[Here you can find a collection us Partners and friendly Websites.]]></item>
+		<item name="wcf.partnerlinkus.partner.feed.title"><![CDATA[{lang}{PAGE_TITLE}{/lang} Partner-Feed]]></item>
+		<item name="wcf.partnerlinkus.partner.feed.description"><![CDATA[Our latest partner:]]></item>
+		<item name="wcf.partnerlinkus.partner.feed"><![CDATA[Partner abonnieren]]></item>
+		<item name="wcf.partnerlinkus.partner.visit"><![CDATA[visit partner]]></item>
+		<!-- /Partner -->
+		<!-- LinkUs -->
+		<item name="wcf.partnerlinkus.linkus.title"><![CDATA[LinkUs]]></item>
+		<item name="wcf.partnerlinkus.linkus.description"><![CDATA[Here you can find banners and codes to link to our website.]]></item>
+		<item name="wcf.partnerlinkus.linkus.count"><![CDATA[Here you can find banners and codes to link to our website.]]></item>
+		<item name="wcf.partnerlinkus.linkus.xhtmlcode"><![CDATA[XHTML Code]]></item>
+		<item name="wcf.partnerlinkus.linkus.htmlcode"><![CDATA[HTML Code]]></item>
+		<item name="wcf.partnerlinkus.linkus.bbcode"><![CDATA[BBCode]]></item>
+		<!-- /LinkUs -->
+	</category>
+	<category name="wcf.usersOnline">
+		<!-- Partner -->
+		<item name="wcf.usersOnline.location.partner"><![CDATA[<a href="index.php?page=Partner">Partner</a>]]></item>
+		<item name="wcf.usersOnline.location.partner.feed"><![CDATA[<a href="index.php?page=PartnerFeed">Partner-Feed</a>]]></item>
+		<!-- /Partner -->
+		<!-- LinkUs -->
+		<item name="wcf.usersOnline.location.linkus"><![CDATA[<a href="index.php?page=LinkUs">LinkUs</a>]]></item>
+		<!-- /LinkUs -->
+	</category>
+	<category name="wcf.global">
+		<!-- Partner -->
+		<item name="wcf.global.page.partnerlinkus.partner.copyright"><![CDATA[<a href="http://www.community4wcf.de" style="font-size: x-small; text-decoration: none;">Partner-Page, developed by Community4WCF</a>]]></item>
+		<item name="wcf.global.page.partnerlinkus.partner.feed.copyright"><![CDATA[Partner-Page, developed by Community4WCF.de]]></item>
+		<!-- /Partner -->
+		<!-- LinkUs -->
+		<item name="wcf.global.page.partnerlinkus.linkus.copyright"><![CDATA[<a href="http://www.community4wcf.de" style="font-size: x-small; text-decoration: none;">LinkUs-Page, developed by Community4WCF</a>]]></item>
+		<!-- /LinkUs -->
+	</category>
+</language>

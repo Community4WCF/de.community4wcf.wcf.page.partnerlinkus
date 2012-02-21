@@ -1,0 +1,1 @@
+				<li><a href="index.php?page=PartnerApply"><img src="{icon}partnerAddM.png{/icon}" alt="" /> <span>{lang}wcf.partnerlinkus.partnerapply.title{/lang}</span></a></li>
