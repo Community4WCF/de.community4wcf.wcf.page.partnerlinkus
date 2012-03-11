@@ -54,10 +54,10 @@
 					{if PARTNER_BUTTON_VISIT}
 						<legend>{lang}{@$item.name}{/lang}</legend>
 					{else}
-						<legend><a href="{@$item.link}">{lang}{@$item.name}{/lang}</a></legend>
+						<legend><a href="{@$item.link}" class="externalURL" style="background-image:none;">{lang}{@$item.name}{/lang}</a></legend>
 					{/if}
 					<div style="text-align: center;">
-						<a href="{@$item.link}"><img src="{@$item.image}"  alt="{lang}{@$item.name}{/lang}" title="{lang}{@$item.name}{/lang}" /></a>
+						<a href="{@$item.link}" class="externalURL" style="background-image:none;"><img src="{@$item.image}"  alt="{lang}{@$item.name}{/lang}" title="{lang}{@$item.name}{/lang}" /></a>
 						{if $item.description}
 							<div class="partnerlinkusdescription">{lang}{@$item.description}{/lang}</div>
 						{/if}
@@ -72,7 +72,7 @@
 								{/if}
 								{if $additionalsmallButtons|isset}{@$additionalsmallButtons}{/if}
 								{if PARTNER_BUTTON_VISIT}
-									<li><a href="{@$item.link}"><img src="{icon}partnerS.png{/icon}" alt="" /> <span>{lang}wcf.partnerlinkus.partner.visit{/lang}</span></a></li>
+									<li><a href="{@$item.link}" class="externalURL" style="background-image:none;"><img src="{icon}partnerS.png{/icon}" alt="" /> <span>{lang}wcf.partnerlinkus.partner.visit{/lang}</span></a></li>
 								{/if}
 							</ul>
 						</div>

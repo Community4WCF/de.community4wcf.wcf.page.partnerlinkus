@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id: de.xml 1277 2010-04-13 19:59:12Z TobiasH87 $ -->
+<!-- $Id: de.xml 1913 2012-03-11 16:21:11Z TobiasH87 $ -->
 <language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de">
 	<category name="wcf.acp.menu">
 		<!-- Partner -->
@@ -182,11 +182,11 @@
 	</category>
 	<category name="wcf.global">
 		<!-- Partner -->
-		<item name="wcf.global.page.partnerlinkus.partner.copyright"><![CDATA[<a href="http://www.community4wcf.de" style="font-size: x-small; text-decoration: none;">Partner-Seite, entwickelt von Community4WCF</a>]]></item>
+		<item name="wcf.global.page.partnerlinkus.partner.copyright"><![CDATA[<a href="http://community4wcf.de" class="externalURL" style="font-size: x-small; text-decoration: none; background-image:none;">Partner-Seite, entwickelt von Community4WCF</a>]]></item>
 		<item name="wcf.global.page.partnerlinkus.partner.feed.copyright"><![CDATA[Partner-Seite, entwickelt von Community4WCF.de]]></item>
 		<!-- /Partner -->
 		<!-- LinkUs -->
-		<item name="wcf.global.page.partnerlinkus.linkus.copyright"><![CDATA[<a href="http://www.community4wcf.de" style="font-size: x-small; text-decoration: none;">LinkUs-Seite, entwickelt von Community4WCF</a>]]></item>
+		<item name="wcf.global.page.partnerlinkus.linkus.copyright"><![CDATA[<a href="http://community4wcf.de" class="externalURL" style="font-size: x-small; text-decoration: none; background-image:none;">LinkUs-Seite, entwickelt von Community4WCF</a>]]></item>
 		<!-- /LinkUs -->
 	</category>
 </language>
