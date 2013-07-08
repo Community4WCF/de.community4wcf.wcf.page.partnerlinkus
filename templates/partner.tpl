@@ -32,7 +32,7 @@
 </div>
 
 
-	<div class="container marginTop">
+	<div class="container containerPadding marginTop">
 				<fieldset>
 						<legend>WoltLab GmbH</legend>
 					<div style="text-align: center;">

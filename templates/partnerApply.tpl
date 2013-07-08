@@ -1,7 +1,7 @@
 {include file='documentHeader'}
 
 <head>
-	<title>{lang}wcf.simplePage.menu{/lang} - {PAGE_TITLE|language}</title>
+	<title>{lang}wcf.partnerlinkus.partner.title{/lang} - {PAGE_TITLE|language}</title>
 	
 	{include file='headInclude'}
 	
@@ -13,15 +13,15 @@
 {include file='header'}
 
 <header class="boxHeadline">
-	<h1>{lang}wcf.simplePage.menu{/lang}</h1>
-	<p>{SIMPLE_PAGE_DESCRIPTION|language}</p>
+	<h1>{lang}wcf.partnerlinkus.partnerapply.title{/lang}</h1>
+	<p>{lang}wcf.partnerlinkus.partnerapply.description{/lang}</p>
 </header>
 
 {include file='userNotice'}
 
 <div class="container containerPadding marginTop">
 	<fieldset>
-		{@$simplepage}
+		{@$partnerapply}
 	
 		{event name='additionalContents'}
 	</fieldset>

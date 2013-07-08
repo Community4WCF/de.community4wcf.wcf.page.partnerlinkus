@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/pagemnu.xsd">
 	<import>
-		<pagemenuitem name="wcf.partnerlinkus.partner.menu">
+		<pagemenuitem name="wcf.partnerlinkus.menu">
 			<controller><![CDATA[wcf\page\PartnerPage]]></controller>
 			<position>header</position>
 			<options>module_partnerlinkus</options>
@@ -10,7 +10,7 @@
 		<pagemenuitem name="wcf.partnerlinkus.partner.menu">
 			<controller><![CDATA[wcf\page\PartnerPage]]></controller>
 			<position>header</position>
-			<parent>wcf.partnerlinkus.partner.menu</parent>
+			<parent>wcf.partnerlinkus.menu</parent>
 			<options>module_partnerlinkus</options>
 			<permissions>user.profile.canViewPartner</permissions>
 			<showorder>1</showorder>
@@ -18,7 +18,7 @@
 		<pagemenuitem name="wcf.partnerlinkus.partnerapply.menu">
 			<controller><![CDATA[wcf\page\PartnerApplyPage]]></controller>
 			<position>header</position>
-			<parent>wcf.partnerlinkus.partner.menu</parent>
+			<parent>wcf.partnerlinkus.menu</parent>
 			<options>module_partnerlinkus</options>
 			<permissions>user.profile.canViewPartnerApply</permissions>
 			<showorder>2</showorder>
@@ -26,7 +26,7 @@
 		<pagemenuitem name="wcf.partnerlinkus.linkus.menu">
 			<controller><![CDATA[wcf\page\LinkUsPage]]></controller>
 			<position>header</position>
-			<parent>wcf.partnerlinkus.partner.menu</parent>
+			<parent>wcf.partnerlinkus.menu</parent>
 			<options>module_partnerlinkus</options>
 			<permissions>user.profile.canViewLinkUs</permissions>
 			<showorder>3</showorder>
