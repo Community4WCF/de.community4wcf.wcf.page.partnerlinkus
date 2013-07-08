@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<!-- $Id: package.xml 1913 2012-03-11 16:21:11Z TobiasH87 $ -->
-<package name="de.community4wcf.wcf.page.partnerlinkus" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/package.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="de.community4wcf.wcf.page.partnerlinkus" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/package.xsd">
 	<packageinformation>
 		<packagename><![CDATA[Partner and Linkus Page]]></packagename>
 		<packagename language="de"><![CDATA[Partner und Linkus Seite]]></packagename>
@@ -8,74 +7,37 @@
 		<packagedescription><![CDATA[This plugin adds a partner and linkus page to the WCF. The partner and linkus can be managed in the ACP.]]></packagedescription>
 		<packagedescription language="de"><![CDATA[Dieses Plugin fügt dem WCF eine Partner und Linkus Seite hinzu. Die Partner und Linkus können im ACP verwaltet werden.]]></packagedescription>
 		<packagedescription language="de-informal"><![CDATA[Dieses Plugin fügt dem WCF eine Partner und Linkus Seite hinzu. Die Partner und Linkus können im ACP verwaltet werden.]]></packagedescription>
-		<version>1.0.5</version> <!-- codename: Partner and Linkus Page -->
 		<packageurl><![CDATA[http://community4wcf.de]]></packageurl>
-		<date>2012-03-11</date>
-		<isunique>1</isunique>
-		<standalone>0</standalone>
-		<plugin>com.woltlab.wcf.form.message</plugin>
+		<version>2.0.0 Alpha 1</version> <!-- codename: Partner and Linkus Page -->
+		<date>2013-07-08</date>
 	</packageinformation>
-
-	<!-- Icons: Oxygen-Icons: http://www.kde-look.org/content/show.php?content=74184 ; bookmark.png, bookmark_add.png, bookmarks_list_add.png, user_group_new.png, kdmconfig.png -->
-
-	<licenseinformation>
-		<license><![CDATA[CC by-sa]]></license>
-		<licenseURL><![CDATA[http://creativecommons.org/licenses/by-sa/3.0/]]></licenseURL>
-	</licenseinformation>
+		
+	<!-- license: CC by-sa <http://creativecommons.org/licenses/by-sa/3.0/> -->
+	
 	<authorinformation>
 		<author><![CDATA[TobiasH]]></author>
-		<authorURL><![CDATA[https://www.woltlab.com/forum/index.php?page=User&userID=1331470]]></authorURL>
+		<authorurl><![CDATA[http://www.woltlab.com/forum/index.php?page=User&userID=1331470]]></authorurl>
 	</authorinformation>
-
+	
 	<requiredpackages>
-		<requiredpackage minversion="1.1.8">com.woltlab.wcf</requiredpackage>
-		<requiredpackage minversion="1.1.3">com.woltlab.wcf.form.message</requiredpackage>
+		<requiredpackage minversion="2.0.0 Beta 4">com.woltlab.wcf</requiredpackage>
 	</requiredpackages>
-	<excludedpackages>
-		<excludedpackage>com.woltlab.wbb.partner</excludedpackage>
-		<excludedpackage>com.wbb.linkus</excludedpackage>
-		<excludedpackage>com.wcf4you.dartgott.partner</excludedpackage>
-		<excludedpackage>de.nicklog.wcf.partnerlinkus</excludedpackage>
-		<excludedpackage>com.nicklog.wcf.coop</excludedpackage>
-		<excludedpackage>de.cls.wcf.partnererweiterung</excludedpackage>
-	</excludedpackages>
-	<optionalpackages>
-		<optionalpackage file="optionals/de.community4wcf.wcf.page.partnerlinkus.partnerapply.tar">de.community4wcf.wcf.page.partnerlinkus.partnerapply</optionalpackage>
-		<!-- <optionalpackage file="optionals/de.community4wcf.wcf.page.partnerlinkus.brandingfree.tar">de.community4wcf.wcf.page.partnerlinkus.brandingfree</optionalpackage> -->
-	</optionalpackages>
-
+	
 	<instructions type="install">
-		<!-- files -->
-		<files>files.tar</files>
-		<acptemplates>acptemplates.tar</acptemplates>
-		<templates>templates.tar</templates>
-		<sql>install.sql</sql>
-		<!-- config -->
-		<groupoptions>xml/groupoptions.xml</groupoptions>
-		<acpmenu>xml/acpmenu.xml</acpmenu>
-		<options>xml/options.xml</options>
-		<pagemenu>xml/pagemenu.xml</pagemenu>
-		<pagelocation>xml/pagelocation.xml</pagelocation>
-		<!-- languages -->
-		<languages languagecode="de">xml/de.xml</languages>
-		<languages languagecode="de-informal">xml/de-informal.xml</languages>
-		<languages languagecode="en">xml/en.xml</languages>
+		<instruction type="file">files.tar</instruction>
+		<instruction type="template">templates.tar</instruction>
+		<instruction type="pageMenu">pageMenu.xml</instruction>
+		<instruction type="option">option.xml</instruction>
+		<instruction type="userGroupOption">userGroupOption.xml</instruction>
+		<instruction type="language">language/*.xml</instruction>
 	</instructions>
-	<instructions type="update" fromversion="1.0.*">
-		<!-- files -->
-		<files>files.tar</files>
-		<acptemplates>acptemplates.tar</acptemplates>
-		<templates>templates.tar</templates>
-		<!--<sql>install.sql</sql>-->
-		<!-- config -->
-		<groupoptions>xml/groupoptions.xml</groupoptions>
-		<acpmenu>xml/acpmenu.xml</acpmenu>
-		<options>xml/options.xml</options>
-		<pagemenu>xml/pagemenu.xml</pagemenu>
-		<pagelocation>xml/pagelocation.xml</pagelocation>
-		<!-- languages -->
-		<languages languagecode="de">xml/de.xml</languages>
-		<languages languagecode="de-informal">xml/de-informal.xml</languages>
-		<languages languagecode="en">xml/en.xml</languages>
+	
+	<instructions type="update" fromversion="2.0.0 Alpha *">
+		<instruction type="file">files.tar</instruction>
+		<instruction type="template">templates.tar</instruction>
+		<instruction type="pageMenu">pageMenu.xml</instruction>
+		<instruction type="option">option.xml</instruction>
+		<instruction type="userGroupOption">userGroupOption.xml</instruction>
+		<instruction type="language">language/*.xml</instruction>
 	</instructions>
 </package>

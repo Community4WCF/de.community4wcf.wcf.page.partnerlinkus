@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="en">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.module_simple_page"><![CDATA[Simple Page]]></item>
+		<item name="wcf.acp.option.module_simple_page.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.category.simplePage"><![CDATA[Simple Page]]></item>
+		<item name="wcf.acp.option.category.simplePage.description"><![CDATA[„Simple Page“ developed by Community4WCF (C4W)]]></item>
+		<item name="wcf.acp.option.category.simplePage.general"><![CDATA[General]]></item>
+		<item name="wcf.acp.option.category.simplePage.general.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.category.simplePage.settings"><![CDATA[Settings]]></item>
+		<item name="wcf.acp.option.category.simplePage.settings.description"><![CDATA[]]></item>
+		<!--
+		<item name="wcf.acp.option.simple_page_title"><![CDATA[Title]]></item>
+		<item name="wcf.acp.option.simple_page_title.description"><![CDATA[Title of the page. (The name of menü you can change in pagemenü.)]]></item>
+		-->
+		<item name="wcf.acp.option.simple_page_description"><![CDATA[Description]]></item>
+		<item name="wcf.acp.option.simple_page_description.description"><![CDATA[Enter the description for the page. (The title of the page and menü you can change in pagemenü.)]]></item>
+		<item name="wcf.acp.option.simple_page_content"><![CDATA[Content]]></item>
+		<item name="wcf.acp.option.simple_page_content.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.simple_page_enable_smiley"><![CDATA[{lang}wcf.message.settings.enableSmilies{/lang}]]></item>
+		<item name="wcf.acp.option.simple_page_enable_smiley.description"><![CDATA[{lang}wcf.message.settings.enableSmilies.description{/lang}]]></item>
+		<item name="wcf.acp.option.simple_page_enable_html"><![CDATA[{lang}wcf.message.settings.enableHtml{/lang}]]></item>
+		<item name="wcf.acp.option.simple_page_enable_html.description"><![CDATA[{lang}wcf.message.settings.enableHtml.description{/lang}]]></item>
+		<item name="wcf.acp.option.simple_page_enable_bbcodes"><![CDATA[{lang}wcf.message.settings.enableBBCodes{/lang}]]></item>
+		<item name="wcf.acp.option.simple_page_enable_bbcodes.description"><![CDATA[{lang}wcf.message.settings.enableBBCodes.description{/lang}]]></item>
+		<item name="wcf.acp.option.simple_page_enable_allowSpiders"><![CDATA[Search engine]]></item>
+		<item name="wcf.acp.option.simple_page_enable_allowSpiders.description"><![CDATA[Enable this option if you want search engines to index this site.]]></item>
+		<item name="wcf.acp.option.simple_page_enable_offlinemode"><![CDATA[Maintenance Mode]]></item>
+		<item name="wcf.acp.option.simple_page_enable_offlinemode.description"><![CDATA[Enable this option if you want the page is accessible during maintenance mode.]]></item>
+	</category>
+	<category name="wcf.simplePage">
+		<item name="wcf.simplePage.title"><![CDATA[Page]]></item>
+		<item name="wcf.simplePage.description"><![CDATA[„Simple Page“ developed by Community4WCF (C4W)]]></item>
+		<!--<item name="wcf.simplePage.content"><![CDATA[This page has no content in your language.]]></item>-->
+		<item name="wcf.simplePage.menu"><![CDATA[Page]]></item>
+	</category>
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.user.profile.canViewSimplePage"><![CDATA[Can see „Simple Page“]]></item>
+		<item name="wcf.acp.group.option.user.profile.canViewSimplePage.description"><![CDATA[]]></item>
+	</category>
+</language>

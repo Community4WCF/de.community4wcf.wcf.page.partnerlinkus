@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/option.xsd">
+	<import>
+		<categories>
+			<category name="partnerlinkus">
+				<parent>general</parent>
+				<options>module_partnerlinkus</options>
+			</category>
+			<category name="partnerlinkus.partnerapply">
+				<parent>partnerlinkus</parent>
+				<showorder>1</showorder>
+			</category>
+			<!--
+			<category name="partnerlinkus.settings">
+				<parent>partnerlinkus</parent>
+				<showorder>2</showorder>
+			</category>
+			-->
+		</categories>
+	
+		<options>
+			<!-- module options -->
+			<option name="module_partnerlinkus">
+				<categoryname>module.content</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<!-- /module options -->
+			<option name="partnerlinkus_partnerapply_content">
+				<categoryname>partnerlinkus.partnerapply</categoryname>
+				<optiontype>textareaI18n</optiontype>
+				<supporti18n>1</supporti18n>
+				<showorder>1</showorder>
+			</option>
+			<option name="partnerlinkus_partnerapply_enable_smiley">
+				<categoryname>partnerlinkus.partnerapply</categoryname>
+				<optiontype>boolean</optiontype>
+				<showorder>2</showorder>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="partnerlinkus_partnerapply_enable_html">
+				<categoryname>partnerlinkus.partnerapply</categoryname>
+				<optiontype>boolean</optiontype>
+				<showorder>3</showorder>
+				<defaultvalue>0</defaultvalue>
+			</option>
+			<option name="partnerlinkus_partnerapply_enable_bbcodes">
+				<categoryname>partnerlinkus.partnerapply</categoryname>
+				<optiontype>boolean</optiontype>
+				<showorder>4</showorder>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<!--
+			<option name="partnerlinkus_enable_allowSpiders">
+				<categoryname>partnerlinkus.settings</categoryname>
+				<optiontype>boolean</optiontype>
+				<showorder>5</showorder>
+				<defaultvalue>0</defaultvalue>
+			</option>
+			-->
+		</options>
+	</import>
+</data>

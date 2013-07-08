@@ -1,9 +1,10 @@
 <?php
 namespace wcf\page;
 use wcf\system\WCF;
+use wcf\system\bbcode\MessageParser;
 
 /**
- * Shows the partner page.
+ * Shows the partner apply page.
  * 
  * @author		Tobias H.
  * @copyright	2008-2013 Community4WCF (C4W)
@@ -12,18 +13,18 @@ use wcf\system\WCF;
  * @subpackage	page
  * @category	Community Framework
  */
-class PartnerPage extends AbstractPage {
+class PartnerApplyPage extends AbstractPage {
 	const AVAILABLE_DURING_OFFLINE_MODE = false;
 	
 	/**
 	 * @see	wcf\page\AbstractPage::$activeMenuItem
 	 */
-	public $activeMenuItem = 'wcf.partnerlinkus.partner.menu';
+	public $activeMenuItem = 'wcf.partnerlinkus.partnerapply.menu';
 	
 	/**
 	 * @see	wcf\page\AbstractPage::$neededPermissions
 	 */
-	public $neededPermissions = array('user.profile.canViewPartner');
+	public $neededPermissions = array('user.profile.canViewPartnerApply');
 	
 	/**
 	 * @see	wcf\page\AbstractPage::$neededModules
@@ -37,6 +38,7 @@ class PartnerPage extends AbstractPage {
 		parent::assignVariables();
 			
 		WCF::getTPL()->assign(array(
+			'partnerapply' => MessageParser::getInstance()->parse(WCF::getLanguage()->getDynamicVariable(PARTNERLINKUS_PARTNERAPPLY_CONTENT), PARTNERLINKUS_PARTNERAPPLY_ENABLE_SMILEY, PARTNERLINKUS_PARTNERAPPLY_ENABLE_HTML, PARTNERLINKUS_PARTNERAPPLY_ENABLE_BBCODES),
 			'allowSpidersToIndexThisPage' => false
 		));
 	}

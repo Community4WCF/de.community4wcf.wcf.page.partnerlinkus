@@ -1,89 +1,43 @@
 <?php
-// wcf imports
-require_once(WCF_DIR.'lib/page/AbstractPage.class.php');
-require_once(WCF_DIR.'lib/data/message/bbcode/MessageParser.class.php');
+namespace wcf\page;
+use wcf\system\WCF;
 
 /**
- * Show the NewsPage.
+ * Shows the linkus page.
  * 
- * @svn			$Id: LinkUsPage.class.php 1134 2010-04-04 22:44:46Z TobiasH87 $
- * @copyright	2010 Community4WCF <http://www.community4wcf.de>
+ * @author		Tobias H.
+ * @copyright	2008-2013 Community4WCF (C4W)
+ * @license		CC by-sa <http://creativecommons.org/licenses/by-sa/3.0/>
  * @package		de.community4wcf.wcf.page.partnerlinkus
+ * @subpackage	page
+ * @category	Community Framework
  */
-
 class LinkUsPage extends AbstractPage {
+	const AVAILABLE_DURING_OFFLINE_MODE = false;
+	
 	/**
-	 * list of linkusitem
-	 * 
-	 * @var	array<integer>
+	 * @see	wcf\page\AbstractPage::$activeMenuItem
 	 */
-	public $linkusitem = array();
-		
+	public $activeMenuItem = 'wcf.partnerlinkus.linkus.menu';
+	
 	/**
-	 * Read LinkUs cache.
-	 * 
-	 * @param 	array		$linkusitem
+	 * @see	wcf\page\AbstractPage::$neededPermissions
 	 */
-	public function readParameters() {
-		parent::readParameters();
-		// Loads cache resources
-		WCF::getCache()->addResource('linkusitem', WCF_DIR.'cache/cache.linkusitem.php', WCF_DIR.'lib/system/cache/CacheBuilderLinkUs.class.php');
-		// get linkusitem from cache
-		$this->linkusitem = WCF::getCache()->get('linkusitem');
-		
-		if(count($this->linkusitem)) {
-		foreach ($this->linkusitem as &$items) {
-			$items['description']  = self::getFormattedMessage($items['description']);
-			}
-		}
-	}
-
+	public $neededPermissions = array('user.profile.canViewLinkUs');
+	
 	/**
-	 * @see Page::assignVariables()
+	 * @see	wcf\page\AbstractPage::$neededModules
+	 */
+	public $neededModules = array('MODULE_PARTNERLINKUS');
+	
+	/**
+	 * @see wcf\page\IPage::assignVariables()
 	 */
 	public function assignVariables() {
 		parent::assignVariables();
-
+			
 		WCF::getTPL()->assign(array(
-			'linkusitem' => $this->linkusitem
+			'allowSpidersToIndexThisPage' => false
 		));
 	}
-	
-	/**
-	 * @see Page::getFormattedMessage($message)
-	 */
-	public function getFormattedMessage($message) {
-		// parse message
-		$enableSmilies = 1;
-		$enableHtml = 0;
-		$enableBBCodes = 1;
-		
-		$parser = MessageParser::getInstance();
-		$parser->setOutputType('text/html');
-		return $parser->parse($message, $enableSmilies, $enableHtml, $enableBBCodes);
-	}
-	
-	/**
-	 * @see Page::show()
-	 */
-	public function show() {
-		// set active menu item
-		require_once(WCF_DIR.'lib/page/util/menu/PageMenu.class.php');
-		PageMenu::setActiveMenuItem('wcf.header.menu.linkus');
-		
-		// check permission
-		WCF::getUser()->checkPermission('user.managepages.canViewLinkUs');
-		
-		// check module options
-		if (!MODULE_LINKUS) {
-			throw new IllegalLinkException();
-		}
-		
-		// show page
-		parent::show();
-		
-		// send content
-		WCF::getTPL()->display('linkusPage');
-	}
 }
-?>
